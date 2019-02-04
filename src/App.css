@@ -3,6 +3,28 @@ h2, h3{
 	border-bottom: 1px solid black;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li{
+	float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
 table{
 	width:100%;
 }
@@ -24,16 +46,8 @@ tr:hover{
 	border: 1px solid black;
 }
 
-/* .Collapse_Table{ */
-	/* padding: 18px; */
-	/* font-size: 15px; */
-/* } */
+.Collapse_Table{
+	padding: 10px;
+	font-size: 15px;
+}
 
-/* .active, .Collapse_Table:hover{ */
-	/* background-color: #ccc; */
-/* } */
-/* .scoreTable{ */
-	/* padding: 0 18px; */
-	/* display:none; */
-	/* overflow: hidden; */
-/* } */
