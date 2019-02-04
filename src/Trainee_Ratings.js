@@ -1,35 +1,44 @@
 import React, { Component } from 'react';
-
+import './App.css'
 
 class TraineeRatings extends Component {
   render() {
     return (
       <div className="Trainee_Ratings">
-        <table>
-		<tr>
-		<th>ID</th>
-		<th>Trainee Name</th>
-		<th>Ratings</th>
-		</tr>
+        <div className="The_Rating_Table">
 		
-		<tr>
-		<td>1</td>
-		<td>Joe Doe</td>
-		<td>8.5</td>
-		</tr>
+		<h2>Java Ratings</h2>
 		
-		<tr>
-		<td>2</td>
-		<td>Jane Doe</td>
-		<td>3.0</td>
-		</tr>
+			<table className="scoreTable">
+				<h3>Rating Table</h3>
+				<tr>
+					<th>ID</th>
+					<th>Trainee Name</th>
+					<th>Ratings</th>
+				</tr>
 		
-		<tr>
-		<td>3</td>
-		<td>John Doe</td>
-		<td>10.0</td>
-		</tr>
-		</table>
+				<tr>
+					<td>1</td>
+					<td>Joe Doe</td>
+					<td>8.5</td>
+				</tr>
+		
+				<tr>
+					<td>2</td>
+					<td>Jane Doe</td>
+					<td>3.0</td>
+				</tr>
+		
+				<tr>
+					<td>3</td>
+					<td>John Doe</td>
+					<td>10.0</td>
+				</tr>
+			</table>
+			
+			<button className="Collapse_Table">Hide Trainees</button>
+			
+		</div>
       </div>
     );
   }

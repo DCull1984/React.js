@@ -6,11 +6,11 @@ import TraineeRatings from './Trainee_Ratings.js';
 class App extends Component {
   render() {
 	  return(
-	<div>
-		
+	
+	<div>	
 		<TraineeRatings />
 	</div>
-	);
+		);
 	}
 }
 
