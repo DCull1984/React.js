@@ -16,16 +16,19 @@ class TraineeRatings extends Component {
 					<th>Trainee Name</th>
 					<th>Ratings</th>
 				</tr>
+				
 				<tr>
 					<td>1</td>
 					<td>Joe Doe</td>
 					<td>8.5</td>
 				</tr>
+				
 				<tr>
 					<td>2</td>
 					<td>Jane Doe</td>
 					<td>3.0</td>
 				</tr>
+				
 				<tr>
 					<td>3</td>
 					<td>John Doe</td>
