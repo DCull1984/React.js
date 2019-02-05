@@ -23,6 +23,11 @@ li a {
   text-decoration: none;
 }
 
+li a:hover{
+	background-color: darkblue;
+	color: white;
+}
+
 table{
 	width:100%;
 }
@@ -47,6 +52,12 @@ tr:hover{
 }
 
 .Collapse_Table{
+	cursor: pointer;
 	padding: 10px;
 	font-size: 15px;
+}
+
+.active{
+	background-color: aqua;
+	color: black;
 }
