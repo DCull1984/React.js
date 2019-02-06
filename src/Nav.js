@@ -1,23 +1,31 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import TraineeRatings from "./Trainee_Ratings";
+import {BrowserRouter as Router, NavLink} from "react-router-dom";
 
 const NavLinks = () => (
     <Router>
-        <div>
-            {/* <h2></h2> */}
+        <div className="NavBar">
             <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/Trainee_Ratings">Trainee Ratings</Link></li>
-                <li><Link to="/Trainers_Holidays">Trainers Holidays</Link></li>
-                <li><Link to="/Trainers_Skills">Trainers Skills</Link></li>
-                <li><Link to="/Trainee Schedule">Trainee Schedule</Link></li>
-                <li><Link to="/Trainers_Subjects">Trainers Subjects</Link></li>
+                <li className="active">
+                <NavLink exact to="/">Home</NavLink></li>
+
+                <li className="active">
+                <NavLink to="/Trainee_Ratings">Trainee Ratings</NavLink></li>
+
+                <li className="active">
+                <NavLink to="/Trainers_Holidays">Trainers Holidays</NavLink></li>
+
+                <li className="active">
+                <NavLink to="/Trainers_Skills">Trainers Skills</NavLink></li>
+
+                <li className="active">
+                <NavLink to="/Trainee Schedule">Trainee Schedule</NavLink></li>
+
+                <li className="active">
+                <NavLink to="/Trainers_Subjects">Trainers Subjects</NavLink></li>
             </ul>
+
         </div>
     </Router>
 );
 
-
-
-export default NavLinks
+export default NavLinks;

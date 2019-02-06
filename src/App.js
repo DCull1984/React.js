@@ -8,10 +8,10 @@ class App extends Component {
   return(
 
    <div>
-       <NavLinks />
+    <NavLinks />
     <TraineeRatings />
    </div>
-   
+
   );
  }
 }

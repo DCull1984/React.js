@@ -28,17 +28,19 @@ li a:hover{
 	color: white;
 }
 
+
 table{
 	width:100%;
 }
 
 th{
+	font-family: fantasy;
 	background-color: #004f9e;
 	color: white;
 }
 
 th, td{
-	padding: 8px;
+	padding: 5px;
 	border-bottom: 1px solid black;
 	text-align: left;
 }
@@ -48,10 +50,15 @@ tr:nth-child(even){
 }
 
 tr:hover{
-	background-color: #f5f5f5;
+	background-color: skyblue;
 }
 
-li :focus{
+.NavBar li > .active{
 	background-color: aqua;
 	color: black;
 }
+
+.Page_Name{
+	font-family: fantasy;
+}
+
