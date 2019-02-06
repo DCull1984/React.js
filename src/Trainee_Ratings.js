@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
-class TraineeRatings extends Component {
- render() {
-
-  return (
+const TraineeRatings = () => (
+ 
 
    <div className="Trainee_Ratings">
 
@@ -49,8 +47,7 @@ class TraineeRatings extends Component {
     </div>
 
    </div>
-   );
- }
-}
+);
+
 
 export default TraineeRatings;

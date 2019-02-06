@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
-import TraineeRatings from './Trainee_Ratings.js';
 import NavLinks from "./Nav.js";
 
 class App extends Component {
- render() {
+constructor(){
+    super();
+    this.state={name:"react"};
+}
+    render() {
   return(
 
    <div>
     <NavLinks />
-    <TraineeRatings />
+    
    </div>
 
   );
