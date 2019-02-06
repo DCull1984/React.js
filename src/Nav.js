@@ -28,7 +28,7 @@ const NavLinks = () => (
 
 const HomePage = () => <Home />;
 
-const Dashboard = ({match}) => 
+const Dashboard = () => 
     <div>
         <h2>Welcome to the Dashboard!!</h2>
         <ul>
@@ -43,7 +43,7 @@ const Dashboard = ({match}) =>
     </div>;
 
 
-const Trainer = ({match}) => 
+const Trainer = () => 
     <div>
         <h2>Welcome to the Trainer Listing</h2>
         <ul>
