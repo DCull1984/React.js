@@ -9,29 +9,18 @@ const NavLinks = () => (
             <ul>
                 <li className="active">
                 <NavLink exact to="/">Home</NavLink></li>
-
-               {/*  <li className="active">
-                <NavLink to="/Trainee_Ratings.js">Trainee Ratings</NavLink></li>
-
+                
                 <li className="active">
-                <NavLink to="/Trainers_Holidays">Trainers Holidays</NavLink></li>
-
+                <NavLink to="/dashboard">Dashboard</NavLink></li>
+            
                 <li className="active">
-                <NavLink to="/Trainers_Skills">Trainers Skills</NavLink></li>
-
-                <li className="active">
-                <NavLink to="/Trainee Schedule">Trainee Schedule</NavLink></li>
-
-                <li className="active">
-                <NavLink to="/Trainers_Subjects">Trainers Subjects</NavLink></li> */}
-
-                <li><Link to="/detailList">DL</Link></li>
+                <NavLink to="/trainers">Trainers</NavLink></li>
             </ul>
 
             <hr />
             <Route exact path ="/" component={HomePage}/>
-            {/* <Route Path="./Trainer_Skills" component={TraineeRatings}/> */}
-            <Route path ="/detailList" component={deatilList}/>
+            <Route path ="/dashboard" component={Dashboard}/>
+            <Route path = "/trainers" component={Trainer}/>
 
         </div>
     </Router>
@@ -39,17 +28,40 @@ const NavLinks = () => (
 
 const HomePage = () => <Home />;
 
-const deatilList = ({match}) => 
+const Dashboard = ({match}) => 
     <div>
-        <h2>Listings</h2>
-        {/* <ul>
-            <li><Link to={`${match.url}/Trainee_Ratings`}>Trainee Ratings</Link></li>
-            <li><Link to="/Trainers_Holidays">Trainer_Holidays</Link></li>
-            <li><Link to="/Trainers Skills">Trainer Skills</Link></li>
-            <li><Link to="Trainers_Subjects">Trainer Subjects</Link></li>
-        </ul> */}
-    </div>
-;
+        <h2>Welcome to the Dashboard!!</h2>
+        <ul>
+            <li>
+              <NavLink to="/Trainee_Ratings">Trainee Ratings</NavLink></li>
+            <li>
+              <NavLink to="/Trainee Schedule">Trainee Schedule</NavLink></li>
+        </ul> 
+        
+        <Route path ="/Trainee_Ratings" component={Ratings}/>
+        {/* <Route path ="/Trainee_Schedule" component={TraineeSchedule}/> */}
+    </div>;
+
+
+const Trainer = ({match}) => 
+    <div>
+        <h2>Welcome to the Trainer Listing</h2>
+        <ul>
+            <li>
+                <NavLink to="/Trainers_Holidays">Trainers Holidays</NavLink></li>
+            <li>
+                <NavLink to="/Trainers_Skills">Trainers Skills</NavLink></li>
+            <li>
+                <NavLink to="/Trainers_Subjects">Trainers Subjects</NavLink></li> 
+        </ul>
+            
+        {/* <Route path="/Trainers_Holidays" component={TrainerHoliday}/>
+        <Route path="/Trainers_Skills" component={TrainerSkills}/>
+        <Route path="/Trainer_Subjects" component={TrainerSubjects}/> */}
+    </div>;
+
+
+const Ratings = () => <TraineeRatings />;
 
 
 export default NavLinks;
