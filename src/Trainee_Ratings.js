@@ -6,7 +6,7 @@ class TraineeRatings extends Component {
   return (
    <div className="Trainee_Ratings">
     
-    <header>
+    {/* <header>
      <ul className="Page_Links">
       <li><a href="#Home">Home</a></li>
       <li><a class="active" href="./Trainee_Ratings.js">Trainee Rating</a></li>
@@ -15,12 +15,13 @@ class TraineeRatings extends Component {
       <li><a href="#TraineeSchedule">Trainee Schedule</a></li>
       <li><a href="#TrainerSubject">Trainers Subject</a></li>
      </ul>
-    </header>
+    </header> */}
 
     <h2>Java Ratings</h2>
 
      <table className="scoreTable">
       <h3>Rating Table</h3>
+       <tbody>
        <tr>
         <th>ID</th>
         <th>Trainee Name</th>
@@ -44,10 +45,8 @@ class TraineeRatings extends Component {
         <td>John Doe</td>
         <td>10.0</td>
        </tr>
+       </tbody>
      </table>
-     
-     <button className="Collapse_Table">Hide Trainees</button>
-
      </div>
    );
  }
